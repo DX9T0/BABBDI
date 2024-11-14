@@ -84,7 +84,7 @@ public class MotorBike : MonoBehaviour
                 GameObject.Find("GameManager").GetComponent<GameManager>().bikeAir = true;
                 GameObject.Find("GameManager").GetComponent<GameManager>().bikeAirState = 1;
                 GameObject.Find("GameManager").GetComponent<GameManager>().lastAchievement = "Way of the biker";
-                SteamIntegration.Instance.UnlockAchivement("WayOfTheBiker");
+                //SteamIntegration.Instance.UnlockAchivement("WayOfTheBiker");
             }
         }
         else mouseLook = 0;
@@ -101,7 +101,7 @@ public class MotorBike : MonoBehaviour
                     GameObject.Find("GameManager").GetComponent<GameManager>().impressGirl = true;
                     GameObject.Find("GameManager").GetComponent<GameManager>().impressGirlState = 1;
                     GameObject.Find("GameManager").GetComponent<GameManager>().lastAchievement = "Way of the seducer";
-                    SteamIntegration.Instance.UnlockAchivement("WayOfTheSeducer");
+                    //SteamIntegration.Instance.UnlockAchivement("WayOfTheSeducer");
                 }
             }
             else impressTimer = 0;

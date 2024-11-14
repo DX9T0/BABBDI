@@ -173,7 +173,7 @@ public class GameManager : MonoBehaviour, ISaveable
         GameObject.Find("Player").transform.rotation = Quaternion.Euler(0,0,0);
         player.rotationX = 0;
         GetComponent<SaveLoadSystem>().Save();
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Menu");
     }
 
     // Update is called once per frame#
@@ -187,7 +187,7 @@ public class GameManager : MonoBehaviour, ISaveable
             allSecrets = true;
             allSecretsState = 1;
             lastAchievement = "Secrets master";
-            SteamIntegration.Instance.UnlockAchivement("SecretsMaster");
+            //SteamIntegration.Instance.UnlockAchivement("SecretsMaster");
         }
 
         /*if (saveSpeedrun.speedrun == 1) resetRun.SetActive(true);
@@ -243,7 +243,7 @@ public class GameManager : MonoBehaviour, ISaveable
             interactEveryone = true;
             interactEveryoneState = 1;
             lastAchievement = "Social Quest";
-            SteamIntegration.Instance.UnlockAchivement("SocialQuest");
+            //SteamIntegration.Instance.UnlockAchivement("SocialQuest");
         }
 
         if (endGame)
@@ -251,7 +251,7 @@ public class GameManager : MonoBehaviour, ISaveable
             if (!escapeBabbdi){
                 escapeBabbdi = true;
                 escapeBabbdiState = 1;
-                SteamIntegration.Instance.UnlockAchivement("MelancholicDeparture");
+                //SteamIntegration.Instance.UnlockAchivement("MelancholicDeparture");
                 Debug.Log("melcahnocl");
             }
         }

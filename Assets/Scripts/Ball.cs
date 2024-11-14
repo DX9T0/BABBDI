@@ -30,7 +30,7 @@ public class Ball : MonoBehaviour
             gameManager.playDog = true;
             gameManager.playDogState = 1;
             gameManager.lastAchievement = "Doggo friendly";
-            SteamIntegration.Instance.UnlockAchivement("DoggoFriendly");
+            //SteamIntegration.Instance.UnlockAchivement("DoggoFriendly");
         }
 
         

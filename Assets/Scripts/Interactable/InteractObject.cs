@@ -83,7 +83,7 @@ public class InteractObject : Interactable
                 GameObject.Find("GameManager").GetComponent<GameManager>().ticket = true;
                 GameObject.Find("GameManager").GetComponent<GameManager>().ticketState = 1;
                 GameObject.Find("GameManager").GetComponent<GameManager>().lastAchievement = "Babbdi quest";
-                SteamIntegration.Instance.UnlockAchivement("BabbdiQuest");
+                //SteamIntegration.Instance.UnlockAchivement("BabbdiQuest");
                 Destroy(this.gameObject);
             }
             if (GetComponent<ItemProperties>().id == 14)
